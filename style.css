@@ -43,6 +43,19 @@ header {
     font-size: 18px;
     font-weight: bold;
   }
+  .card-deck-wrapper {
+    overflow: hidden;
+  }
+  
+  .card-deck {
+    display: flex;
+    transition: transform 1s ease;
+  }
+  
+  .card-deck.move {
+    transform: translateX(-100%);
+  }
+
   
   /* Footer */
   footer {

@@ -5,11 +5,15 @@ $(document).ready(function(){
     });
   });
 
-  $(document).ready(function(){
-    var slideInterval = setInterval(nextSlide, 3000);
-    var slideCount = $('.card-deck .card').length;
-    var slideWidth = $('.card-deck .card').width();
-    var slideHeight = $('.card-deck .card').height();
-    var sliderUlWidth = slideCount * slideWidth;
+  function moveCard() {
+    const cardDeck = document.getElementById('card-deck');
+    cardDeck.classList.add('move');
+    setTimeout(() => {
+      const firstCard = cardDeck.querySelector('.card:first-child');
+      cardDeck.appendChild(firstCard);
+      cardDeck.classList.remove('move');
+    }, 1000);
+  }
   
-    $('.card-deck-wrapper').css({ width: slideWidth
+  // 일정 시간 간격으로 카드 영역 이동 함수를 호출
+  setInterval(moveCard, 3000);
