@@ -1,3 +1,3 @@
 # web_miniprj
 
-testest
+Chat GPT를 이용해서 나만의 
