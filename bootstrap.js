@@ -4,3 +4,12 @@ $(document).ready(function(){
       $(".navbar-collapse").collapse('hide');
     });
   });
+
+  $(document).ready(function(){
+    var slideInterval = setInterval(nextSlide, 3000);
+    var slideCount = $('.card-deck .card').length;
+    var slideWidth = $('.card-deck .card').width();
+    var slideHeight = $('.card-deck .card').height();
+    var sliderUlWidth = slideCount * slideWidth;
+  
+    $('.card-deck-wrapper').css({ width: slideWidth
