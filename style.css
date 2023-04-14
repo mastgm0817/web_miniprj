@@ -29,11 +29,6 @@ header {
     margin: 0 auto;
   }
   
-  .card {
-    width: 18rem;
-    margin-bottom: 30px;
-  }
-  
   .card-img-top {
     height: 200px;
     object-fit: cover;
@@ -44,6 +39,7 @@ header {
     font-weight: bold;
   }
   .card-deck-wrapper {
+    margin: 0;
     overflow: hidden;
     margin-bottom: 20px;
   }
@@ -51,12 +47,22 @@ header {
   .card-deck {
     display: flex;
     transition: transform 1s ease;
+    margin: 0;
+    padding: 0;
   }
   
   .card-deck.move {
     transform: translateX(-100%);
   }
 
+  
+  .card {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    width: 18rem;
+    margin-bottom: 30px;
+  }
 
   
   /* Footer */
