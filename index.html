@@ -6,10 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <!-- 부트스트랩 CSS 파일 추가 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <!-- jQuery 라이브러리 추가 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- 움직이는 카드 스크립트 추가 -->
-    <script src="moving-cards.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -45,15 +41,40 @@
         </nav>
       </div>
     </header>
+    
     <!-- Contents -->
-        <!-- 반응형 이미지 -->
-        <div class="container">
-            <!-- 반응형 이미지 -->
-            <div class="image-wrapper">
-              <img src="imgs/movie_banner.jpeg" alt="your-image-description" class="img-fluid">
+    <div class="container">
+      <!-- 반응형 이미지 -->
+      <div class="row">
+        <div class="col-12">
+          <div class="image-wrapper" style="height: 500px;">
+            <img src="imgs/movie_banner.jpeg" alt="your-image-description" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      
+      <!-- 부트스트랩 카드 -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="imgs/귀멸의칼날.jpeg" alt="카드 이미지">
+              <div class="card-body">
+                <h5 class="card-title">귀멸의 칼날</h5>
+                <p class="card-text">귀멸의 칼날 보러가기</p>
+              </div>
             </div>
-            <!-- 부트스트랩 카드 -->
-            <div class="card-deck-wrapper">
+            <div class="card">
+              <img class="card-img-top" src="imgs/나홀로집에.jpeg" alt="카드 이미지">
+              <div class="card-body">
+                <h5 class="card-title">나홀로집에</h5>
+                <p class="card-text">나홀로집에
+                </div>
+            </div>
+            <!-- Contents 2 -->
+            <div class="container">
+              <!-- 부트스트랩 카드 -->
+              <div class="card-deck-wrapper">
                 <div class="card-deck">
                   <div class="card">
                     <img class="card-img-top" src="imgs/귀멸의칼날.jpeg" alt="카드 이미지">
@@ -85,19 +106,17 @@
                   </div>
                 </div>
               </div>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-          <!-- 저작권 정보 -->
-          <p>copy right 2023 encore play data data engineering 23기</p>
-        </div>
-      </footer>
-      
-      <!-- jQuery 라이브러리 추가 -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <!-- 부트스트랩 JS 파일 추가 -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    </body>
-    </html>
-    
+            </div>
+            <!-- Footer -->
+            <footer>
+              <div class="footer-content">
+                <!-- 저작권 정보 -->
+                <p>copy right 2023 encore play data data engineering 23기</p>
+              </div>
+            </footer>
+            <!-- jQuery 라이브러리 추가 -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <!-- 부트스트랩 JS 파일 추가 -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            </body>
+            </html>
