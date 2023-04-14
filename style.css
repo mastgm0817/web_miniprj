@@ -1,0 +1,35 @@
+/*반응형 디자인을 위한 설정*/
+.container {
+    max-width: 1140px;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/*첫번째 섹션 이미지 스타일*/
+section img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*다음으로 버튼 스타일*/
+.btn-secondary {
+    border-radius: 20px;
+}
+
+/*프로필 이미지
